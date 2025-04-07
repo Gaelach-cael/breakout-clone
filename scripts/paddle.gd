@@ -16,3 +16,5 @@ func _physics_process(_delta: float):
 
     velocity = Vector2(movement, 0) * paddle_speed
     move_and_slide()
+
+    
