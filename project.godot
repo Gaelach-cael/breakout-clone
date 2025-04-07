@@ -12,4 +12,9 @@ config_version=5
 
 config/name="Breakout-clone"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/bg_color=Color(0.72484, 0.000470911, 0.739907, 1)
 config/icon="res://icon.svg"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

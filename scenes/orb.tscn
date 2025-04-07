@@ -1,3 +1,15 @@
-[gd_scene format=3 uid="uid://cajuomic2odv5"]
+[gd_scene load_steps=3 format=3 uid="uid://cajuomic2odv5"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://clfe1sdyj5oqg" path="res://icon.svg" id="1_sl5l6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ntdup"]
+size = Vector2(20.0629, 19.9686)
+
+[node name="ball" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sl5l6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(6.4, 6.4)
+shape = SubResource("RectangleShape2D_ntdup")
