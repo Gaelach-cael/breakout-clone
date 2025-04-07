@@ -5,7 +5,7 @@ extends CharacterBody2D
 
 
 #function called per frame
-func _physics_process(delta: float):
+func _physics_process(_delta: float):
     #defines movement var as 0 at start of frame
     var movement = 0
     #defines movement left+right
