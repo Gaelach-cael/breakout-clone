@@ -33,7 +33,7 @@ script = ExtResource("4_dr74f")
 position = Vector2(579, 561)
 scale = Vector2(0.5, 0.5)
 
-[node name="score" type="Label" parent="."]
+[node name="Score" type="Label" parent="."]
 offset_right = 226.0
 offset_bottom = 83.0
 theme_override_font_sizes/font_size = 60
