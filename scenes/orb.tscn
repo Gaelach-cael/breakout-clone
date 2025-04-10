@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cajuomic2odv5"]
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_4txi5"]
-[ext_resource type="Texture2D" uid="uid://clfe1sdyj5oqg" path="res://icon.svg" id="1_sl5l6"]
+[ext_resource type="Texture2D" uid="uid://bex7nk05bcnxv" path="res://assets/art/orb.png" id="2_kn57l"]
 [ext_resource type="AudioStream" uid="uid://b8hpusga047c" path="res://assets/audio/blip.wav" id="3_wesv6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t0fvu"]
@@ -10,7 +10,7 @@
 script = ExtResource("1_4txi5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_sl5l6")
+texture = ExtResource("2_kn57l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(6.4, 6.4)
