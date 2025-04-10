@@ -1,8 +1,11 @@
 extends CharacterBody2D
 
+@export var ballspeed = 150
+@onready var lose = preload("res://scenes/lose.tscn")
+
 func _ready():
 	#set movement speed
-	velocity = Vector2(150, 150)
+	velocity = Vector2(ballspeed, ballspeed)
 	add_to_group("orb")
 
 func _physics_process(delta: float):
@@ -16,3 +19,8 @@ func _physics_process(delta: float):
 		velocity = velocity.bounce(normal)
 		
 		$AudioStreamPlayer.play()
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
+		get_parent().add_child(lose.instantiate())
+		get_tree().paused = true

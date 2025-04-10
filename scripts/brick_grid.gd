@@ -5,7 +5,7 @@ extends Node2D
 
 func _ready():
     for x in range(64, 1152, 128):
-        for y in range(12.5, 350, 70):
+        for y in range(40, 375, 70):
             var newBrick = brick.instantiate()
             newBrick.position = Vector2(x, y)
             add_child(newBrick)

@@ -1,14 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvvjaubd35jov"]
+[gd_scene load_steps=2 format=3 uid="uid://c8jvhp153ylk2"]
 
-[ext_resource type="Script" path="res://scripts/win.gd" id="1_uk8nd"]
+[ext_resource type="Script" path="res://scripts/win.gd" id="1_7r3uf"]
 
-[node name="Win" type="CanvasLayer"]
+[node name="lose" type="CanvasLayer"]
 process_mode = 3
-script = ExtResource("1_uk8nd")
+script = ExtResource("1_7r3uf")
 metadata/_edit_vertical_guides_ = [576.0]
 metadata/_edit_horizontal_guides_ = [324.0]
 
-[node name="Wintext" type="Label" parent="."]
+[node name="losetext" type="Label" parent="."]
 process_mode = 3
 offset_left = 254.0
 offset_top = 240.0
@@ -17,6 +17,6 @@ offset_bottom = 409.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 60
-text = "You Win
+text = "You Lost
 Press Space to Restart"
 horizontal_alignment = 1
