@@ -10,6 +10,7 @@ size = Vector2(21.7687, 10)
 size = Vector2(21.6667, 10.1538)
 
 [node name="Bricks" type="StaticBody2D"]
+scale = Vector2(0.75, 0.75)
 script = ExtResource("1_vf7tt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -11,7 +11,7 @@ metadata/_edit_vertical_guides_ = [576.0]
 
 [node name="paddle" parent="." instance=ExtResource("1_2tbco")]
 position = Vector2(576, 587)
-scale = Vector2(1.96, 1)
+scale = Vector2(1.5, 1)
 paddle_speed = 350
 
 [node name="wall" parent="." instance=ExtResource("1_433oh")]
@@ -31,15 +31,15 @@ script = ExtResource("4_dr74f")
 
 [node name="orb" parent="." instance=ExtResource("2_tmip6")]
 position = Vector2(576, 485)
-scale = Vector2(0.5, 0.5)
-ballspeed = 200
+scale = Vector2(0.4, 0.4)
+ballspeed = 250
 
 [node name="Score" type="Label" parent="."]
 process_mode = 3
 offset_left = 5.0
-offset_top = 593.0
+offset_top = 591.0
 offset_right = 178.0
-offset_bottom = 657.0
+offset_bottom = 655.0
 theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 46
 text = "Score: 0"

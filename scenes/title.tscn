@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d38n3n5xu5igj"]
+[gd_scene load_steps=3 format=3 uid="uid://d38n3n5xu5igj"]
 
 [ext_resource type="Script" path="res://scripts/startbutton.gd" id="1_5jc1d"]
+[ext_resource type="Theme" uid="uid://da4auneojowh4" path="res://themes/title.tres" id="2_jp3pv"]
 
 [node name="Title" type="CanvasLayer"]
 script = ExtResource("1_5jc1d")
@@ -13,13 +14,25 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -102.0
-offset_top = -63.0
+offset_left = -149.0
+offset_top = -90.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2, 2)
-theme_override_font_sizes/font_size = 40
+theme = ExtResource("2_jp3pv")
 text = "Start
 "
+
+[node name="Label" type="Label" parent="."]
+offset_left = 36.0
+offset_top = 86.0
+offset_right = 1114.0
+offset_bottom = 196.0
+theme_override_colors/font_outline_color = Color(0.301961, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 80
+text = "Yet Another Breakout Clone"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

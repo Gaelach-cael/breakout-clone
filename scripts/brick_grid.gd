@@ -4,8 +4,8 @@ extends Node2D
 @onready var win = preload("res://scenes/win.tscn")
 
 func _ready():
-    for x in range(64, 1152, 128):
-        for y in range(40, 375, 64):
+    for x in range(48, 1152, 96):
+        for y in range(0, 375, 48):
             var newBrick = brick.instantiate()
             newBrick.position = Vector2(x, y)
             add_child(newBrick)

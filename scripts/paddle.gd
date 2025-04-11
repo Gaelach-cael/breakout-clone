@@ -3,6 +3,9 @@ extends CharacterBody2D
 #defines speed for paddle
 @export var paddle_speed = 25
 
+func _process(delta: float):
+	position.y = 586
+	
 
 #function called per frame
 func _physics_process(_delta: float):

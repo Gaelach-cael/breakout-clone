@@ -1,1 +1,1 @@
-# breakout-clone
+space and enter are both interact keys, a+d and left arrow+right arrow are both move left and move right respectively
